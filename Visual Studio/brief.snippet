@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>brief</Title>
+			<Shortcut>brief</Shortcut>
+			<Description>概述</Description>
+			<Author>0xzhang</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+        </Header>
+        <Snippet>
+        <Declarations>
+				<Literal>
+					<ID>brief</ID>
+					<ToolTip>概述</ToolTip>
+					<Default>This is a XXX.</Default>
+				</Literal>
+                <Literal>
+					<ID>detail</ID>
+					<ToolTip>详细</ToolTip>
+					<Default>This is detail.</Default>
+				</Literal>
+		</Declarations>
+        <Code Language="cpp"><![CDATA[
+/**
+* $brief$
+* $detail$
+*/
+				]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

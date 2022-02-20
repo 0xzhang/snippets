@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>func</Title>
+			<Shortcut>func</Shortcut>
+			<Description>函数</Description>
+			<Author>0xzhang</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+        </Header>
+        <Snippet>
+        <Declarations>
+				<Literal>
+					<ID>brief</ID>
+					<ToolTip>概述</ToolTip>
+					<Default>This is a XXX.</Default>
+				</Literal>
+                <Literal>
+					<ID>p1</ID>
+					<ToolTip>参数1</ToolTip>
+					<Default>a</Default>
+				</Literal>
+                <Literal>
+					<ID>p2</ID>
+					<ToolTip>参数2</ToolTip>
+					<Default>b</Default>
+				</Literal>
+                <Literal>
+					<ID>brief</ID>
+					<ToolTip>详细</ToolTip>
+					<Default>???</Default>
+				</Literal>
+		</Declarations>
+        <Code Language="cpp"><![CDATA[
+/**
+* @brief:	$brief$
+* @param:   $p1$
+* @param:   $p2$
+* @see:     $what$
+* @return:
+*/
+				]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

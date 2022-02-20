@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>enums</Title>
+			<Shortcut>enums</Shortcut>
+			<Description>枚举类型</Description>
+			<Author>0xzhang</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+        </Header>
+        <Snippet>
+        <Declarations>
+				<Literal>
+					<ID>enum</ID>
+					<ToolTip>枚举类型</ToolTip>
+					<Default>enumT</Default>
+				</Literal>
+                <Literal>
+					<ID>TVal1</ID>
+					<ToolTip>变量1</ToolTip>
+					<Default>v1</Default>
+				</Literal>
+				<Literal>
+					<ID>TVal2</ID>
+					<ToolTip>变量2</ToolTip>
+					<Default>v2</Default>
+				</Literal>
+				<Literal>
+					<ID>TVal3</ID>
+					<ToolTip>变量3</ToolTip>
+					<Default>v3</Default>
+				</Literal>
+				<Literal>
+					<ID>enumPtr</ID>
+					<ToolTip>枚举指针</ToolTip>
+					<Default>enumPtr</Default>
+				</Literal>
+				<Literal>
+					<ID>enumVar</ID>
+					<ToolTip>枚举变量</ToolTip>
+					<Default>enumVar</Default>
+				</Literal>
+		</Declarations>
+        <Code Language="cpp"><![CDATA[
+    enum $enum$ { 
+        $TVal1$, /**< enum value TVal1. */  
+        $TVal2$, /**< enum value TVal2. */  
+        $TVal3$  /**< enum value TVal3. */
+		*$enumPtr$, /**< enum pointer. Details. */
+    	$enumVar$;  /**< enum variable. Details. */
+    }
+				]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
